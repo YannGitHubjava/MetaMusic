@@ -44,7 +44,7 @@ public class SpotifyAPIModel {
             clientSecret = lineArray[0];
             reader.close();
         } catch  (Exception e) {
-            System.out.println("Problem reading files");
+            e.printStackTrace();
         }
     }
 
@@ -87,9 +87,11 @@ public class SpotifyAPIModel {
             @Override
             public void onSuccess(AuthorizationCodeCredentials authorizationCodeCredentials) {
                  /* The tokens were retrieved successfully! */
+/*
                 System.out.println("Successfully retrieved an access token! " + authorizationCodeCredentials.getAccessToken());
                 System.out.println("The access token expires in " + authorizationCodeCredentials.getExpiresIn() + " seconds");
                 System.out.println("Luckily, I can refresh it using this refresh token! " + authorizationCodeCredentials.getRefreshToken());
+*/
 
 
                 /* Set the access token and refresh token so that they are used whenever needed */
@@ -136,8 +138,10 @@ public class SpotifyAPIModel {
             refreshAccessTokenCredentials.getExpiresIn();
             api.setAccessToken(refreshAccessTokenCredentials.getAccessToken());
             accessToken = refreshAccessTokenCredentials.getAccessToken();
+/*
             System.out.println(accessToken);
             System.out.println("Refresh worked!");
+*/
         } catch (Exception e){
             e.printStackTrace();
         }
@@ -151,7 +155,7 @@ public class SpotifyAPIModel {
             userID = user.getId();
             return userID;
         } catch (Exception e) {
-            System.out.println("Something went wrong!" + e.getMessage());
+            e.printStackTrace();
         }
         return "Something Went Wrong";
     }
@@ -189,7 +193,7 @@ public class SpotifyAPIModel {
                 metaMusicSongList.add(metaMusicSong);
             }
         } catch (Exception e) {
-            System.out.println("Something went wrong!" + e.getMessage());
+            e.printStackTrace();
         }
         return metaMusicSongList;
     }

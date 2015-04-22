@@ -68,9 +68,7 @@ public class DatabaseModel {
             String createTableSQL = "CREATE TABLE MetaMusicSong " +
                     "(metaMusicSong BLOB)";   //Binary Large OBject
             statement.executeUpdate(createTableSQL);
-            System.out.println("Created MetaMusicSong table");
         } catch (SQLException se) {
-            System.out.println("MetaMusicSong already exists");
         }
     }
 

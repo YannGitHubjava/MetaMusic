@@ -17,19 +17,9 @@ public class TwitterAPIController {
     }
 
 
-    public static LinkedList<String> getArtistsTweetsAsStrings(String artistName) {
-        LinkedList<Status> llstatus = TwitterAPIModel.getNmostRecentTweetsFromArtistName(10, artistName);
-        LinkedList<String> llstring = new LinkedList<String>();
-        for (Status status : llstatus) {
-            String str = status.getCreatedAt() + ": " + status.getText() + " RT: " + status.getRetweetCount() + " FAV: " + status.getFavoriteCount();
-            llstring.add(str);
-        }
-        return llstring;
-    }
 
-    public static String getArtistTwitterHandle(String artistName) {
-        User u = TwitterAPIModel.findAnArtistsTwitterUserAccount(artistName);
-        return  u.getScreenName();
+    public static LinkedList<String> getArtistTwitterHandleAndTweets(String artistName) {
+        return TwitterAPIModel.getTwitterHandleAndTweets(artistName);
     }
 
 }

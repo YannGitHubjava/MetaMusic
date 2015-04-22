@@ -53,7 +53,7 @@
           <text value="Saved Tracks:"/>
         </properties>
       </component>
-      <scrollpane id="40363" binding="paneScroll">
+      <scrollpane id="40363" binding="scrollPaneTwitter">
         <constraints>
           <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
           <gridbag weightx="0.0" weighty="0.0"/>
@@ -61,12 +61,9 @@
         <properties/>
         <border type="none"/>
         <children>
-          <component id="29e52" class="javax.swing.JList" binding="lstTweets">
+          <component id="7b30c" class="javax.swing.JTextPane" binding="txtpaneTwitter">
             <constraints/>
-            <properties>
-              <fixedCellHeight value="-1"/>
-              <minimumSize width="0" height="0"/>
-            </properties>
+            <properties/>
           </component>
         </children>
       </scrollpane>

@@ -42,16 +42,14 @@ public class LoginView extends JFrame {
         });
 
 
-
         btnLogin.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 boolean success = LoginController.authenticateTokenFromURL(txtAuthenticatedLink.getText());
                 if (success) {
-                    lblCanary.setText("Login Successful!!");
                     LoginController.destroyLoginFrameAndLoadMetaMusicFrame();
                 } else {
-                    lblCanary.setText("Login Failed, try again");
+                    System.out.println("loginfailed");
                 }
             }
         });
