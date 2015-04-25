@@ -78,6 +78,8 @@ public class TwitterAPIModel {
         //http://stackoverflow.com/questions/15319971/how-to-use-twitter4j-to-show-tweets
         User u = null;
         try {
+
+            /*
             //try to just do a search on the User first
             String artistNameNoSpaces = artistName.replace(" ", "");
             String[] user = new String[1];
@@ -85,7 +87,7 @@ public class TwitterAPIModel {
             ResponseList<User> rl =  twitter.lookupUsers(user);
             if (rl.get(0).isVerified()) {
                 u = rl.get(0);
-            } else {
+            } else */{
                 //that didn't work... so try this now:
                 //Query query = new Query(artistName);
                 ResponseList<User> responseListUser = twitter.searchUsers(artistName, 1);

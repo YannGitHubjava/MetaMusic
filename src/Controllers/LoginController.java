@@ -3,6 +3,7 @@ package Controllers;
 import Models.SpotifyAPIModel;
 import Views.LoginView;
 import Views.MetaMusicView;
+import Views.MetaMusicView;
 
 import java.util.Timer;
 
@@ -48,7 +49,13 @@ public class LoginController {
         return SpotifyAPIModel.getAuthenticationTokenFromURL(authenticatedURL);
     }
 
-    public static void destroyLoginFrameAndLoadMetaMusicFrame() {
+    public static void destroyLoginFrameAndLoadMetaMusicFrameUSER() {
+        loginView.dispose();
+        new MetaMusicView();
+        setupClockController();
+    }
+
+    public static void destroyLoginFrameAndLoadMetaMusicFrameUNAUTH() {
         loginView.dispose();
         new MetaMusicView();
         setupClockController();

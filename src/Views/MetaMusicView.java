@@ -7,7 +7,6 @@ import Models.DatabaseModel;
 
 import javax.swing.*;
 import javax.swing.text.*;
-import javax.swing.text.html.HTMLDocument;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -18,18 +17,19 @@ import java.util.LinkedList;
  */
 public class MetaMusicView extends  JFrame{
 
-    private JPanel rootPanel;
-    private JLabel lblSpotifyUserName;
-    private JComboBox cboSavedTracks;
-    private JButton btnExit;
-    private JButton btnExecute;
-    private JScrollPane scrollPaneTwitter;
-    private JTextPane txtpaneTwitter;
+    protected JPanel rootPanel;
+    protected JLabel lblSpotifyUserName;
+    protected JComboBox cboSavedTracks;
+    protected JButton btnExit;
+    protected JButton btnExecute;
+    protected JScrollPane scrollPaneTwitter;
+    protected JTextPane txtpaneTwitter;
     LinkedList<MetaMusicSong> metaMusicSongList;
+
 
     public MetaMusicView(){
         super("MetaMusic");
-        this.setSize(new Dimension(1000, 500));
+        this.setSize(new Dimension(1500, 500));
         //txtpaneTwitter.setSize(400, 300);
         txtpaneTwitter.setPreferredSize(new Dimension(400, 300));
         //scrollPaneTwitter.setSize(400, 300);
@@ -37,6 +37,7 @@ public class MetaMusicView extends  JFrame{
         setContentPane(rootPanel);
         //pack();
         lblSpotifyUserName.setSize(200, 50);
+        cboSavedTracks.setSize(400, 300);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
 
@@ -63,14 +64,6 @@ public class MetaMusicView extends  JFrame{
                 MetaMusicSong mms1 = (MetaMusicSong) cboSavedTracks.getSelectedItem();                //get MetaMusicSong object that's selected
                 String artistName = mms1.getStrListArtists().get(0);                 //currently only going to show the first artist... add more functionality later
                 LinkedList<String> stringsToDisplay = TwitterAPIController.getArtistTwitterHandleAndTweets(artistName);
-                /*//http://www.seasite.niu.edu/cs580java/JList_Basics.htm
-                String[] toDisplay = new String[stringsToDisplay.size()];
-                for (int ix = 0; ix < stringsToDisplay.size(); ix++) {    //+1 for the artistTwitterHandle
-                    toDisplay[ix] = stringsToDisplay.get(ix);
-                }
-                lstTweets.setCellRenderer(new MyCellRenderer(350));
-                lstTweets.setListData(toDisplay);*/
-
                 String strToDisplay = "";
                 for (String s : stringsToDisplay) {
                     strToDisplay += s + "\n";

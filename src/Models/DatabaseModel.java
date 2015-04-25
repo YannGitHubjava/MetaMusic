@@ -8,7 +8,6 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.sql.*;
 import java.util.LinkedList;
-import java.util.Scanner;
 
 /**
  * Created by MatthewRowe on 4/21/15.
@@ -47,30 +46,48 @@ public class DatabaseModel {
 
     public static void initializeDatabase() {
         connectToDatabase();
-        createTable();
     }
 
-    private static void connectToDatabase() {
-        try {
-            conn = DriverManager.getConnection(protocol + dbName + ";create=true", USER, PASS);
-            statement = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,
-                    ResultSet.CONCUR_READ_ONLY);    //http://stackoverflow.com/questions/8033163/moving-resultset-to-first
-        } catch (SQLException se) {
-            se.printStackTrace();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+                private static void connectToDatabase() {
+                    try {
+                        conn = DriverManager.getConnection(protocol + dbName + ";create=true", USER, PASS);
+                        statement = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,
+                                ResultSet.CONCUR_READ_ONLY);    //http://stackoverflow.com/questions/8033163/moving-resultset-to-first
+                    } catch (SQLException se) {
+                        se.printStackTrace();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
 
+                }
+
+    public static void createTableAuthorized() {
+        dropTable("MetaMusicSong");
+        createTable("MetaMusicSong");
     }
 
-    private static void createTable() {
-        try {
-            String createTableSQL = "CREATE TABLE MetaMusicSong " +
-                    "(metaMusicSong BLOB)";   //Binary Large OBject
-            statement.executeUpdate(createTableSQL);
-        } catch (SQLException se) {
-        }
-    }
+
+
+                    private static void createTable(String tableName) {
+                        try {
+                            String createTableSQL = "CREATE TABLE " + tableName + " " +
+                                    "(metaMusicSong BLOB)";   //Binary Large OBject
+                            statement.executeUpdate(createTableSQL);
+                        } catch (SQLException se2) {
+                            System.out.println("Couldn't create table");
+                        }
+                    }
+
+
+                    private static void dropTable(String tableName) {
+                        try {
+                            String dropTableSQL = "DROP TABLE " + tableName;
+                            statement.executeUpdate(dropTableSQL);
+                        } catch (SQLException se1) {
+                            System.out.println("Couldn't drop table MetaMusicSong (before creating it)");
+                        }
+                    }
+
 
 
     public static void insertMetaMusicSongObjectLinkedListIntoDatabaseTableMetaMusicSong(LinkedList<MetaMusicSong> mmsLinkedListToInsert) {
@@ -103,30 +120,39 @@ public class DatabaseModel {
             }
     }
 
-    public static void insertMetaMusicSongObjectIntoDatabaseTableMetaMusicSong(MetaMusicSong mmsToInsert) {
-        try {
-            if (!checkIfMetaMusicSongObjectAlreadyExistsInDatabase(mmsToInsert)) {
-                ByteArrayOutputStream baos = new ByteArrayOutputStream();
-                ObjectOutputStream oos = new ObjectOutputStream(baos);
-                oos.writeObject(mmsToInsert);
-                // serialize the employee object into a byte array
-                byte[] metaMusicSongAsBytes = baos.toByteArray();
-                PreparedStatement pstmt =
-                        conn.prepareStatement
-                                ("INSERT INTO MetaMusicSong (metaMusicSong) VALUES(?)");
-                ByteArrayInputStream bais =
-                        new ByteArrayInputStream(metaMusicSongAsBytes);
-                // bind our byte array  to the emp column
-                pstmt.setBinaryStream(1,bais, metaMusicSongAsBytes.length);
-                pstmt.executeUpdate();
-                conn.commit();
-                pstmt.close();
-            }
-        }
-        catch(Exception e) {
-            e.printStackTrace();
-        }
-    }
+                    private static boolean checkIfMetaMusicSongObjectAlreadyExistsInDatabase(MetaMusicSong mmsToCheck) {
+                        try {
+                            Statement stmt = conn.createStatement();
+                            ResultSet rs =
+                                    stmt.executeQuery("SELECT metaMusicSong FROM MetaMusicSong");
+                            // loop through the result set
+                            while (rs.next()) {
+                                // fetch the serialized object to a byte array
+                                Blob aBlob = rs.getBlob(1);
+                                byte[] st = aBlob.getBytes(1, (int) aBlob.length());
+                                //byte[] st = (byte[])rs.getObject(1);
+                                //   or  byte[] st = rs.getBytes(1);
+                                //   or  Blob aBlob = rs.getBlob(1);
+                                //       byte[] st = aBlob.getBytes(0, (int) aBlob.length());
+                                ByteArrayInputStream baip =
+                                        new ByteArrayInputStream(st);
+                                ObjectInputStream ois =
+                                        new ObjectInputStream(baip);
+                                // re-create the object
+                                MetaMusicSong mmp = (MetaMusicSong)ois.readObject();
+                                // display the result for demonstration
+                                if (mmp.toString().equals(mmsToCheck.toString())) {
+                                    return true;
+                                }
+                            }
+                            stmt.close();
+                            rs.close();
+                        }
+                        catch(Exception e) {
+                            e.printStackTrace();
+                        }
+                        return false;
+                    }
 
 
     public static LinkedList<MetaMusicSong> selectAllMetaMusicSongObjectsFromDatabase() {
@@ -162,39 +188,7 @@ public class DatabaseModel {
         return mmsLinkedList;
     }
 
-    private static boolean checkIfMetaMusicSongObjectAlreadyExistsInDatabase(MetaMusicSong mmsToCheck) {
-        try {
-            Statement stmt = conn.createStatement();
-            ResultSet rs =
-                    stmt.executeQuery("SELECT metaMusicSong FROM MetaMusicSong");
-            // loop through the result set
-            while (rs.next()) {
-                // fetch the serialized object to a byte array
-                Blob aBlob = rs.getBlob(1);
-                byte[] st = aBlob.getBytes(1, (int) aBlob.length());
-                //byte[] st = (byte[])rs.getObject(1);
-                //   or  byte[] st = rs.getBytes(1);
-                //   or  Blob aBlob = rs.getBlob(1);
-                //       byte[] st = aBlob.getBytes(0, (int) aBlob.length());
-                ByteArrayInputStream baip =
-                        new ByteArrayInputStream(st);
-                ObjectInputStream ois =
-                        new ObjectInputStream(baip);
-                // re-create the object
-                MetaMusicSong mmp = (MetaMusicSong)ois.readObject();
-                // display the result for demonstration
-                if (mmp.toString().equals(mmsToCheck.toString())) {
-                    return true;
-                }
-            }
-            stmt.close();
-            rs.close();
-        }
-        catch(Exception e) {
-            e.printStackTrace();
-        }
-        return false;
-    }
+
 
     public static void disconnectFromDatabase() {
         try {

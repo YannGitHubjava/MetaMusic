@@ -16,7 +16,6 @@ public class LoginView extends JFrame {
     private JButton btnAuthenticate;
     private JTextField txtAuthenticatedLink;
     private JButton btnLogin;
-    private JLabel lblCanary;
 
     public LoginView () {
         super("Login");
@@ -47,12 +46,13 @@ public class LoginView extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 boolean success = LoginController.authenticateTokenFromURL(txtAuthenticatedLink.getText());
                 if (success) {
-                    LoginController.destroyLoginFrameAndLoadMetaMusicFrame();
+                    LoginController.destroyLoginFrameAndLoadMetaMusicFrameUSER();
                 } else {
                     System.out.println("loginfailed");
                 }
             }
         });
+
     }
 
 

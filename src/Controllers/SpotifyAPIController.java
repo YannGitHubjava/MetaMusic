@@ -19,6 +19,7 @@ public class SpotifyAPIController {
     public static LinkedList<MetaMusicSong> getUsersSavedTracks() {
         //put users saved tracks in the database
         DatabaseModel.initializeDatabase();
+        DatabaseModel.createTableAuthorized();
         try {
             DatabaseModel.insertMetaMusicSongObjectLinkedListIntoDatabaseTableMetaMusicSong(SpotifyAPIModel.getUsersSavedTracks());
         } catch (Exception e) {
@@ -27,4 +28,6 @@ public class SpotifyAPIController {
         //get those tracks from the database
         return DatabaseModel.selectAllMetaMusicSongObjectsFromDatabase();
     }
+
+
 }
