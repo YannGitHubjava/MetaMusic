@@ -51,13 +51,13 @@ public class LoginController {
 
     public static void destroyLoginFrameAndLoadMetaMusicFrameUSER() {
         loginView.dispose();
-        new MetaMusicView();
+        new MetaMusicView(true);
         setupClockController();
     }
 
     public static void destroyLoginFrameAndLoadMetaMusicFrameUNAUTH() {
         loginView.dispose();
-        new MetaMusicView();
+        new MetaMusicView(false);
         setupClockController();
     }
 

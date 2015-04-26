@@ -1,7 +1,7 @@
 ----------------------------------------------------------------
-Fri Apr 24 13:24:04 CDT 2015:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.1 - (1616546): instance a816c00e-014c-ecac-1b72-0000060c4348 
-on database directory /Users/MatthewRowe/dev/programs/javaFinalProjectMetaMusic/dbo.SavedSongs with class loader sun.misc.Launcher$AppClassLoader@36c51089 
+Sun Apr 26 12:40:44 CDT 2015:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.1 - (1616546): instance a816c00e-014c-f6d1-2823-000006365dc8 
+on database directory /Users/MatthewRowe/dev/programs/javaFinalProjectMetaMusic/dbo.SavedSongs with class loader sun.misc.Launcher$AppClassLoader@43c0ae76 
 Loaded from file:/Users/MatthewRowe/Library/Preferences/IntelliJIdea14/jdbc-drivers/derby-10.11.1.1.jar
 java.vendor=Oracle Corporation
 java.runtime.version=1.7.0_75-b13

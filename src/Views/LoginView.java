@@ -16,6 +16,7 @@ public class LoginView extends JFrame {
     private JButton btnAuthenticate;
     private JTextField txtAuthenticatedLink;
     private JButton btnLogin;
+    private JButton btnLoginWithoutAuthenticating;
 
     public LoginView () {
         super("Login");
@@ -53,6 +54,12 @@ public class LoginView extends JFrame {
             }
         });
 
+        btnLoginWithoutAuthenticating.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                LoginController.destroyLoginFrameAndLoadMetaMusicFrameUNAUTH();
+            }
+        });
     }
 
 

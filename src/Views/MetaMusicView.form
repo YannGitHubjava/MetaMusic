@@ -85,6 +85,22 @@
           <text value="Exit"/>
         </properties>
       </component>
+      <scrollpane id="d5440" binding="scrollPane">
+        <constraints>
+          <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="25222" binding="innerInstagramPanel" layout-manager="GridBagLayout">
+            <constraints/>
+            <properties/>
+            <border type="none"/>
+            <children/>
+          </grid>
+        </children>
+      </scrollpane>
     </children>
   </grid>
 </form>

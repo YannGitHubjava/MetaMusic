@@ -1,15 +1,19 @@
 package Views;
 
 import Classes.MetaMusicSong;
+import Controllers.InstagramAPIController;
 import Controllers.SpotifyAPIController;
 import Controllers.TwitterAPIController;
 import Models.DatabaseModel;
 
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import javax.swing.text.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.image.BufferedImage;
+import java.net.URL;
 import java.util.LinkedList;
 
 /**
@@ -24,10 +28,12 @@ public class MetaMusicView extends  JFrame{
     protected JButton btnExecute;
     protected JScrollPane scrollPaneTwitter;
     protected JTextPane txtpaneTwitter;
+    private JScrollPane scrollPane;
+    private JPanel innerInstagramPanel;
     LinkedList<MetaMusicSong> metaMusicSongList;
 
 
-    public MetaMusicView(){
+    public MetaMusicView(boolean isUserAuthenticated){
         super("MetaMusic");
         this.setSize(new Dimension(1500, 500));
         //txtpaneTwitter.setSize(400, 300);
@@ -41,11 +47,13 @@ public class MetaMusicView extends  JFrame{
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
 
-        lblSpotifyUserName.setText(SpotifyAPIController.getSpotifyUserName());
-        //pack();
-
-        fillComboBoxWithUsersSavedSongList();
-        //pack();
+        if (isUserAuthenticated) {
+            lblSpotifyUserName.setText(SpotifyAPIController.getSpotifyUserName());
+            fillComboBoxWithUsersSavedSongList();
+        }  else {
+            lblSpotifyUserName.setText("MetaMusic User");
+            fillComboBoxWithGlobalSavedSongList();
+        }
 
 
         btnExit.addActionListener(new ActionListener() {
@@ -60,6 +68,7 @@ public class MetaMusicView extends  JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                //TWITTER
                 TwitterAPIController.loginToTwitter();
                 MetaMusicSong mms1 = (MetaMusicSong) cboSavedTracks.getSelectedItem();                //get MetaMusicSong object that's selected
                 String artistName = mms1.getStrListArtists().get(0);                 //currently only going to show the first artist... add more functionality later
@@ -77,19 +86,51 @@ public class MetaMusicView extends  JFrame{
 
                 }
                 txtpaneTwitter.setDocument(doc);
-                //pack();
+
+                //INSTAGRAM
+
+                innerInstagramPanel.removeAll();
+                LinkedList<String> instagramImageURLs = InstagramAPIController.getNurlsForArtist(10, artistName);
+                scrollPane.setPreferredSize(new Dimension(680, 600));
+                scrollPane.setMinimumSize(new Dimension(680, 600));
+                innerInstagramPanel.setLayout(new GridLayout(instagramImageURLs.size(), 1));
+                for (String imageURL : instagramImageURLs) {
+                    try {
+                        URL url = new URL(imageURL);
+                        BufferedImage image = ImageIO.read(url);
+                        ImageIcon icon = new ImageIcon(image);
+                        JLabel lblLabel = new JLabel();
+                        lblLabel.setIcon(icon);
+                        lblLabel.setMinimumSize(new Dimension(640, 600));
+                        //dimensions 640 x 600
+                        lblLabel.setText("");
+                        innerInstagramPanel.add(lblLabel);
+                        scrollPane.revalidate();
+                        pack();
+
+                    } catch (Exception ex) {
+                        System.out.println("algo paso instagram image loading in the meta music view");
+                    }
+
+                }
 
 
             }
         });
     }
 
+                    private void fillComboBoxWithGlobalSavedSongList() {
+                        metaMusicSongList = SpotifyAPIController.getGlobalSavedTracks();
+                        for (MetaMusicSong mmSong: metaMusicSongList) {
+                            cboSavedTracks.addItem(mmSong);
+                        }
+                    }
 
-    private void fillComboBoxWithUsersSavedSongList() {
-        metaMusicSongList = SpotifyAPIController.getUsersSavedTracks();
-        for (MetaMusicSong mmSong: metaMusicSongList) {
-            cboSavedTracks.addItem(mmSong);
-        }
 
-    }
+                    private void fillComboBoxWithUsersSavedSongList() {
+                        metaMusicSongList = SpotifyAPIController.getUsersSavedTracks();
+                        for (MetaMusicSong mmSong: metaMusicSongList) {
+                            cboSavedTracks.addItem(mmSong);
+                        }
+                    }
 }

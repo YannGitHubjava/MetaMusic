@@ -1,18 +1,22 @@
+[DONE]... implement version control
 [DONE] user login to spotify
 [DONE] get user's saved song lists and put in combo box
 [DONE] user picks a song and then can see 20 tweets from that artist
-[TODO]... implement version control
+[TODO]... make it so that the links in the twitter feed are clickable and blue
 [TODO]... •	block comment at the top of every file with your name and description of the class(es) the file contains Nice
-[TODO] refactor DB usage so that when a user authenticates, they make/modify two databases...their 'temp' one for the session, and the global one that saves all songs ever used on this app
-[TODO] make it so that the user can choose to sign without authenticating [see global database of songs]
+[TODO]... add unit tests
+[DONE] refactor DB usage so that when a user authenticates, they make/modify two databases...their 'temp' one for the session, and the global one that saves all songs ever used on this app
+[DONE] make it so that the user can choose to sign without authenticating [see global database of songs]
+[DONE] show band's instagram if it has one
+
+
+
+[TODO]... clara's note about a superclass for "getapiinformation"???
+[TODO]... clara... Retrofit...?  Need it if java api wrappers have already been made...?
 [TODO] make it so that the wikipedia page for the band is displayed
 [TODO] make it so the song lyrics for the song are displayed
 [TODO] make youtube song appear for the selected song if there is one
 [TODO] if there isn't a youtube song for selected song just make one for the band appear
-[TODO] show band's instagram if it has one
 [TODO] show recent news of band from Google
-[TODO]... clara's note about a superclass for "getapiinformation"???
-[TODO]... clara... Retrofit...?  Need it if java api wrappers have already been made...?
 [TODO]... find concert schedule for band and display this
 [TODO]... sheet music for song display
-[TODO]... add unit tests

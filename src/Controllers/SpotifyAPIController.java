@@ -3,6 +3,9 @@ package Controllers;
 import Classes.MetaMusicSong;
 import Models.DatabaseModel;
 import Models.SpotifyAPIModel;
+
+import javax.xml.crypto.Data;
+import java.awt.image.DataBuffer;
 import java.util.LinkedList;
 
 /**
@@ -21,12 +24,18 @@ public class SpotifyAPIController {
         DatabaseModel.initializeDatabase();
         DatabaseModel.createTableAuthorized();
         try {
-            DatabaseModel.insertMetaMusicSongObjectLinkedListIntoDatabaseTableMetaMusicSong(SpotifyAPIModel.getUsersSavedTracks());
+            DatabaseModel.receiveMetaMusicSongObjectLinkedListIntoDatabase(SpotifyAPIModel.getUsersSavedTracks());
         } catch (Exception e) {
             System.out.println("Couldn't get Spotify Saved Tracks and insert them into the database");
         }
         //get those tracks from the database
-        return DatabaseModel.selectAllMetaMusicSongObjectsFromDatabase();
+        return DatabaseModel.selectAllMetaMusicSongObjectsFromDatabase(true);
+    }
+
+    public static LinkedList<MetaMusicSong> getGlobalSavedTracks() {
+        DatabaseModel.initializeDatabase();
+        DatabaseModel.createTableGlobal();
+        return DatabaseModel.selectAllMetaMusicSongObjectsFromDatabase(false);
     }
 
 
