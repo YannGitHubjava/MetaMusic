@@ -58,7 +58,6 @@ public class LoginController {
     public static void destroyLoginFrameAndLoadMetaMusicFrameUNAUTH() {
         loginView.dispose();
         new MetaMusicView(false);
-        setupClockController();
     }
 
 

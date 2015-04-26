@@ -132,7 +132,7 @@ public class TwitterAPIModel {
             handleAndTweets.add("Twitter Handle: " + u.getScreenName() + "\n"); //add handle to list to pass
             LinkedList<Status> tweets = getNTweetsFromSpecifiedUser(10, u);
             for (Status s : tweets) {
-                String strToAdd = s.getCreatedAt() + "\n" + s.getText() + "\nRT[" + s.getRetweetCount() + "] + Fav[" + s.getFavoriteCount() + "]\n";
+                String strToAdd = s.getCreatedAt() + " <br> " + s.getText() + " <br> RT[" + s.getRetweetCount() + "] + Fav[" + s.getFavoriteCount() + "] \n";
                 handleAndTweets.add(strToAdd);
             }
 
