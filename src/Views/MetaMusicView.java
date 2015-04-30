@@ -53,7 +53,6 @@ public class MetaMusicView extends  JFrame{
         //lblSpotifyUserName.setSize(200, 50);
         //cboSavedTracks.setSize(400, 300);
 
-
         //set sizes
         this.setSize(new Dimension(1500, 500));
         cboSavedTracks.setPreferredSize(new Dimension(200, 50));
@@ -156,6 +155,7 @@ public class MetaMusicView extends  JFrame{
 
             }
         });
+
     }
 
                     private void fillComboBoxWithGlobalSavedSongList() {
