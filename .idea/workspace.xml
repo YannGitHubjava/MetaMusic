@@ -2,21 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11e937d6-19cc-46d8-813d-6f04955bcb8e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Controllers/LoginController.class" afterPath="$PROJECT_DIR$/target/classes/Controllers/LoginController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Views/MetaMusicView$1.class" afterPath="$PROJECT_DIR$/target/classes/Views/MetaMusicView$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Views/MetaMusicView$2.class" afterPath="$PROJECT_DIR$/target/classes/Views/MetaMusicView$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Views/MetaMusicView.class" afterPath="$PROJECT_DIR$/target/classes/Views/MetaMusicView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Models/TwitterAPIModel.class" afterPath="$PROJECT_DIR$/target/classes/Models/TwitterAPIModel.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dbo.SavedSongs/seg0/c4c0.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dbo.SavedSongs/seg0/d4e0.dat" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbo.SavedSongs/seg0/c20.dat" afterPath="$PROJECT_DIR$/dbo.SavedSongs/seg0/c20.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbo.SavedSongs/seg0/c31.dat" afterPath="$PROJECT_DIR$/dbo.SavedSongs/seg0/c31.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbo.SavedSongs/seg0/c41.dat" afterPath="$PROJECT_DIR$/dbo.SavedSongs/seg0/c41.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbo.SavedSongs/seg0/c4d0.dat" afterPath="$PROJECT_DIR$/dbo.SavedSongs/seg0/c4d0.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbo.SavedSongs/seg0/c51.dat" afterPath="$PROJECT_DIR$/dbo.SavedSongs/seg0/c51.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbo.SavedSongs/seg0/c60.dat" afterPath="$PROJECT_DIR$/dbo.SavedSongs/seg0/c60.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbo.SavedSongs/seg0/c71.dat" afterPath="$PROJECT_DIR$/dbo.SavedSongs/seg0/c71.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbo.SavedSongs/seg0/c81.dat" afterPath="$PROJECT_DIR$/dbo.SavedSongs/seg0/c81.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbo.SavedSongs/seg0/c90.dat" afterPath="$PROJECT_DIR$/dbo.SavedSongs/seg0/c90.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbo.SavedSongs/seg0/ca1.dat" afterPath="$PROJECT_DIR$/dbo.SavedSongs/seg0/ca1.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbo.SavedSongs/seg0/cb1.dat" afterPath="$PROJECT_DIR$/dbo.SavedSongs/seg0/cb1.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbo.SavedSongs/db.lck" afterPath="$PROJECT_DIR$/dbo.SavedSongs/db.lck" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbo.SavedSongs/log/log.ctrl" afterPath="$PROJECT_DIR$/dbo.SavedSongs/log/log.ctrl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbo.SavedSongs/log/log1.dat" afterPath="$PROJECT_DIR$/dbo.SavedSongs/log/log1.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbo.SavedSongs/log/logmirror.ctrl" afterPath="$PROJECT_DIR$/dbo.SavedSongs/log/logmirror.ctrl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controllers/LoginController.java" afterPath="$PROJECT_DIR$/src/Controllers/LoginController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Views/MetaMusicView.form" afterPath="$PROJECT_DIR$/src/Views/MetaMusicView.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Views/MetaMusicView.java" afterPath="$PROJECT_DIR$/src/Views/MetaMusicView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Models/TwitterAPIModel.java" afterPath="$PROJECT_DIR$/src/Models/TwitterAPIModel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/derby.log" afterPath="$PROJECT_DIR$/derby.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -69,26 +71,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InstagramAPIModel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Models/InstagramAPIModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="686" max-vertical-offset="2790">
-              <caret line="69" column="79" selection-start-line="69" selection-start-column="79" selection-end-line="69" selection-end-column="79" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2186#2187#0" expanded="true" />
-                <element signature="e#2269#2270#0" expanded="true" />
-                <element signature="e#5171#5172#0" expanded="true" />
-                <element signature="e#5199#5200#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controllers/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="468" max-vertical-offset="1020">
+            <state vertical-scroll-proportion="0.0" vertical-offset="483" max-vertical-offset="1035">
               <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
               <folding />
             </state>
@@ -98,22 +84,36 @@
       <file leaf-file-name="SpotifyAPIController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controllers/SpotifyAPIController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="23" max-vertical-offset="585">
-              <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="600">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MetaMusicView.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MetaMusicView.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Views/MetaMusicView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.73913044" vertical-offset="2172" max-vertical-offset="2925">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2299" max-vertical-offset="3075">
               <caret line="178" column="25" selection-start-line="178" selection-start-column="25" selection-end-line="178" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3900#4750#0" expanded="true" />
-                <element signature="e#4749#4750#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DatabaseModel.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Models/DatabaseModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="2.201087" vertical-offset="0" max-vertical-offset="3015">
+              <caret line="92" column="30" selection-start-line="92" selection-start-column="30" selection-end-line="92" selection-end-column="30" />
+              <folding>
+                <marker date="1430240484000" expanded="true" signature="2030:2122" placeholder="CREATE TABLE..missingValue..." />
+                <marker date="1430240484000" expanded="true" signature="2545:2556" placeholder="DROP TABLE m..." />
+                <marker date="1430240484000" expanded="true" signature="3591:3645" placeholder="INSERT INTO ..." />
+                <marker date="1430240484000" expanded="true" signature="5399:5425" placeholder="SELECT metaM..missingValue..." />
+                <marker date="1430240484000" expanded="true" signature="7757:7783" placeholder="SELECT metaM..missingValue..." />
               </folding>
             </state>
           </provider>
@@ -122,7 +122,7 @@
       <file leaf-file-name="LoginView.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Views/LoginView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="855">
+            <state vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="870">
               <caret line="35" column="57" selection-start-line="35" selection-start-column="57" selection-end-line="35" selection-end-column="57" />
               <folding />
             </state>
@@ -132,7 +132,7 @@
       <file leaf-file-name="TwitterAPIModel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Models/TwitterAPIModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1518" max-vertical-offset="2175">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1965" max-vertical-offset="2190">
               <caret line="137" column="0" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
               <folding />
             </state>
@@ -142,7 +142,7 @@
       <file leaf-file-name="ClockController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controllers/ClockController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3" max-vertical-offset="555">
+            <state vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="570">
               <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
               <folding />
             </state>
@@ -152,7 +152,7 @@
       <file leaf-file-name="toImplement.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/toImplement.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+            <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="1050">
               <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
@@ -200,7 +200,6 @@
         <option value="$PROJECT_DIR$/src/Views/LoginView.form" />
         <option value="$PROJECT_DIR$/src/Views/LoginView.java" />
         <option value="$PROJECT_DIR$/src/Controllers/SpotifyAPIController.java" />
-        <option value="$PROJECT_DIR$/src/Models/DatabaseModel.java" />
         <option value="$PROJECT_DIR$/src/Models/WikipediaAPIModel.java" />
         <option value="$PROJECT_DIR$/src/WikipediaTest/ExtendedHTMLConverter.java" />
         <option value="$PROJECT_DIR$/src/WikipediaTest/MyHtmlConverter.java" />
@@ -220,6 +219,7 @@
         <option value="$PROJECT_DIR$/src/Controllers/LoginController.java" />
         <option value="$PROJECT_DIR$/src/Models/TwitterAPIModel.java" />
         <option value="$PROJECT_DIR$/src/Views/MetaMusicView.java" />
+        <option value="$PROJECT_DIR$/src/Models/DatabaseModel.java" />
       </list>
     </option>
   </component>
@@ -266,8 +266,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -430,6 +428,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -861,6 +861,22 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <extension name="scalaCoverage" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -879,22 +895,6 @@
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <extension name="scalaCoverage" />
-      <module name="" />
-      <setting name="path" value="" />
-      <setting name="package" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="$PROJECT_DIR$" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="" />
-      <setting name="testKind" value="Class" />
-      <setting name="showProgressMessages" value="true" />
-      <envs />
       <method />
     </configuration>
     <list size="5">
@@ -945,11 +945,12 @@
       <workItem from="1429984238822" duration="20000" />
       <workItem from="1429996266059" duration="9761000" />
       <workItem from="1430061652779" duration="12279000" />
+      <workItem from="1430427815976" duration="507000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83523000" />
+    <option name="totallyTimeSpent" value="84030000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
@@ -975,7 +976,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3336529" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12517883" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24606581" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25736237" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1031,7 +1032,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="67" />
+      <option name="time" value="68" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -1046,6 +1047,11 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Views/MetaMusicView.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Views/MetaMusicView.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
@@ -1116,8 +1122,6 @@
           <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3900#4750#0" expanded="true" />
-            <element signature="e#4749#4750#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1281,13 +1285,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Views/MyCellRenderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="7" max-vertical-offset="555">
-          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controllers/TwitterAPIController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
@@ -1299,20 +1296,6 @@
     <entry file="file://$PROJECT_DIR$/src/Views/LoginView.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Models/DatabaseModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3150">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#833#834#0" expanded="false" />
-            <element signature="e#868#869#0" expanded="false" />
-            <element signature="e#1710#1711#0" expanded="false" />
-            <element signature="e#1750#1751#0" expanded="false" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -1343,9 +1326,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="342" max-vertical-offset="1200">
           <caret line="46" column="14" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1365,10 +1345,6 @@
           <caret line="69" column="79" selection-start-line="69" selection-start-column="79" selection-end-line="69" selection-end-column="79" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2186#2187#0" expanded="true" />
-            <element signature="e#2269#2270#0" expanded="true" />
-            <element signature="e#5171#5172#0" expanded="true" />
-            <element signature="e#5199#5200#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1396,16 +1372,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controllers/SpotifyAPIController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="23" max-vertical-offset="585">
-          <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controllers/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="468" max-vertical-offset="1020">
-          <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="600">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1438,12 +1406,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Views/MetaMusicView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.73913044" vertical-offset="2172" max-vertical-offset="2925">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2299" max-vertical-offset="3075">
           <caret line="178" column="25" selection-start-line="178" selection-start-column="25" selection-end-line="178" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3900#4750#0" expanded="true" />
-            <element signature="e#4749#4750#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controllers/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="468" max-vertical-offset="1020">
+          <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Models/DatabaseModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.201087" vertical-offset="0" max-vertical-offset="3015">
+          <caret line="92" column="30" selection-start-line="92" selection-start-column="30" selection-end-line="92" selection-end-column="30" />
+          <folding>
+            <marker date="1430240484000" expanded="true" signature="2030:2122" placeholder="CREATE TABLE..missingValue..." />
+            <marker date="1430240484000" expanded="true" signature="2545:2556" placeholder="DROP TABLE m..." />
+            <marker date="1430240484000" expanded="true" signature="3591:3645" placeholder="INSERT INTO ..." />
+            <marker date="1430240484000" expanded="true" signature="5399:5425" placeholder="SELECT metaM..missingValue..." />
+            <marker date="1430240484000" expanded="true" signature="7757:7783" placeholder="SELECT metaM..missingValue..." />
           </folding>
         </state>
       </provider>
