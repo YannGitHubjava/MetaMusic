@@ -11,6 +11,8 @@ import java.util.LinkedList;
 
 /**
  * Created by MatthewRowe on 4/21/15.
+ * Stores all songs ever entered into the database
+ * Stores current users's saved song in a functionally temporary table
  */
 
 //http://www.rgagnon.com/javadetails/java-0117.html

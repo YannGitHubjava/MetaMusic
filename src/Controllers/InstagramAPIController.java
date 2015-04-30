@@ -6,6 +6,7 @@ import java.util.LinkedList;
 
 /**
  * Created by MatthewRowe on 4/26/15.
+ * In charge of handling view requests to the InstagramAPIModel
  */
 public class InstagramAPIController {
 

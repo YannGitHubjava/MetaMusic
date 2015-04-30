@@ -2,17 +2,22 @@
 [DONE] user login to spotify
 [DONE] get user's saved song lists and put in combo box
 [DONE] user picks a song and then can see 20 tweets from that artist
-[TODO]... make it so that the links in the twitter feed are clickable and blue
-[TODO]... •	block comment at the top of every file with your name and description of the class(es) the file contains Nice
-[TODO]... add unit tests
+[DONE]... make it so that the links in the twitter feed are clickable and blue
+[TODO]... •	block comment at the top of every file with your name and description of the class(es) the file contains
 [DONE] refactor DB usage so that when a user authenticates, they make/modify two databases...their 'temp' one for the session, and the global one that saves all songs ever used on this app
 [DONE] make it so that the user can choose to sign without authenticating [see global database of songs]
 [DONE] show band's instagram if it has one
+//Without being able to run the code, it does looks very modular. Think about the similarities between InstagramModel, SpofifyModel, TwitterModel. Can you abstract some of that functionality into a AbstractAPIDataManager class?  Also look at your GUI. How fixed are all of the components? How would you be able to add other data sources and GUI components in the future? Could you do something like adding a mediator class for your Models which interact with these and provide a JPanel (which may contain other components e.g. images, tweets) to display in the main window?
 
-
-
+[TODO]... add unit tests
 [TODO]... clara's note about a superclass for "getapiinformation"???
+
+[TODO]... ADD VIEW HANDLER in between view and the Controller...
+[TODO]... Interface... that the APIs would have to implement...  [API]
+[TODO]... interface that the VIEWHandler's would have to implement [APIhandler}
+
 [TODO]... clara... Retrofit...?  Need it if java api wrappers have already been made...?
+[TODO]... try to find something that just returns JSON and deal with that messy business {POJOs
 [TODO] make it so that the wikipedia page for the band is displayed
 [TODO] make it so the song lyrics for the song are displayed
 [TODO] make youtube song appear for the selected song if there is one
@@ -20,3 +25,41 @@
 [TODO] show recent news of band from Google
 [TODO]... find concert schedule for band and display this
 [TODO]... sheet music for song display
+
+
+/*
+package Views;
+
+import javax.swing.*;
+import java.awt.*;
+
+/**
+ * Created by MatthewRowe on 4/21/15.
+ * Use
+ */
+
+//http://stackoverflow.com/questions/8197167/word-wrap-in-jlist-items
+
+class MyCellRenderer extends DefaultListCellRenderer {
+    public static final String HTML_1 = "<html><body style='width: ";
+    public static final String HTML_2 = "px'>";
+    public static final String HTML_3 = "</html>";
+    private int width;
+
+    public MyCellRenderer(int width) {
+        this.width = width;
+    }
+
+    @Override
+    public Component getListCellRendererComponent(JList list, Object value,
+                                                  int index, boolean isSelected, boolean cellHasFocus) {
+        String text = HTML_1 + String.valueOf(width) + HTML_2 + value.toString()
+                + HTML_3;
+        return super.getListCellRendererComponent(list, text, index, isSelected,
+                cellHasFocus);
+    }
+
+}
+
+
+*/

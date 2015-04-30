@@ -8,6 +8,7 @@ import java.util.LinkedList;
 
 /**
  * Created by MatthewRowe on 4/21/15.
+ * Handle's Twitter API requests from the View
  */
 public class TwitterAPIController {
 
@@ -16,10 +17,8 @@ public class TwitterAPIController {
         TwitterAPIModel.loginToTwitter();
     }
 
-
-
     public static LinkedList<String> getArtistTwitterHandleAndTweets(String artistName) {
-        return TwitterAPIModel.getTwitterHandleAndTweets(artistName);
+        return (LinkedList<String>) TwitterAPIModel.getTwitterHandleAndTweets(artistName).clone();
     }
 
 }

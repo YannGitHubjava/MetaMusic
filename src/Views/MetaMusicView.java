@@ -22,6 +22,7 @@ import java.util.LinkedList;
 
 /**
  * Created by MatthewRowe on 4/16/15.
+ * View for MetaMusic frame
  */
 public class MetaMusicView extends  JFrame{
 
@@ -39,15 +40,27 @@ public class MetaMusicView extends  JFrame{
 
     public MetaMusicView(boolean isUserAuthenticated){
         super("MetaMusic");
-        this.setSize(new Dimension(1500, 500));
         //txtpaneTwitter.setSize(400, 300);
-        textpaneTwitter.setPreferredSize(new Dimension(400, 300));
+        //textpaneTwitter.setPreferredSize(new Dimension(400, 300));
+        //textpaneTwitter.setMaximumSize(new Dimension(400, 300));
         //scrollPaneTwitter.setSize(400, 300);
-        scrollpaneTwitter.setPreferredSize(new Dimension(400, 300));
+        //scrollpaneTwitter.setPreferredSize(new Dimension(400, 300));
+        //scrollpaneTwitter.setMaximumSize(new Dimension(400, 300));
+        //scrollPane.setSize(new Dimension(400, 300));
+        //scrollpaneTwitter.setSize(new Dimension(400, 300));
         setContentPane(rootPanel);
         //pack();
-        lblSpotifyUserName.setSize(200, 50);
-        cboSavedTracks.setSize(400, 300);
+        //lblSpotifyUserName.setSize(200, 50);
+        //cboSavedTracks.setSize(400, 300);
+
+
+        //set sizes
+        this.setSize(new Dimension(1500, 500));
+        cboSavedTracks.setPreferredSize(new Dimension(200, 50));
+        scrollpaneTwitter.setPreferredSize(new Dimension(600, 300));
+        //textpaneTwitter.setPreferredSize((new Dimension(600, 300)));
+        scrollpaneTwitter.setPreferredSize(new Dimension(600, 300));
+
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
 
@@ -58,7 +71,6 @@ public class MetaMusicView extends  JFrame{
             lblSpotifyUserName.setText("MetaMusic User");
             fillComboBoxWithGlobalSavedSongList();
         }
-
 
         btnExit.addActionListener(new ActionListener() {
             @Override
@@ -118,8 +130,8 @@ public class MetaMusicView extends  JFrame{
 
                 innerInstagramPanel.removeAll();
                 LinkedList<String> instagramImageURLs = InstagramAPIController.getNurlsForArtist(10, artistName);
-                scrollPane.setPreferredSize(new Dimension(680, 600));
-                scrollPane.setMinimumSize(new Dimension(680, 600));
+                scrollPane.setPreferredSize(new Dimension(640, 600));
+                scrollPane.setMinimumSize(new Dimension(640, 600));
                 innerInstagramPanel.setLayout(new GridLayout(instagramImageURLs.size(), 1));
                 for (String imageURL : instagramImageURLs) {
                     try {

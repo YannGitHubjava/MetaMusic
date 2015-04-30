@@ -1,6 +1,5 @@
 package Models;
 
-import InstagramTest.tester;
 import org.jinstagram.Instagram;
 import org.jinstagram.InstagramConfig;
 import org.jinstagram.auth.model.Token;
@@ -27,6 +26,7 @@ import javax.swing.SwingUtilities;
 
 /**
  * Created by MatthewRowe on 4/25/15.
+ * Handle's all Instagram API requests
  */
 public class InstagramAPIModel {
 
@@ -136,9 +136,6 @@ public class InstagramAPIModel {
 
     }
 
-    public static void main(String[] args) {
-        new tester();
-    }
 
 }
 

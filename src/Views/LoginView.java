@@ -10,6 +10,7 @@ import java.net.URI;
 
 /**
  * Created by MatthewRowe on 4/16/15.
+ * View for login
  */
 public class LoginView extends JFrame {
     private JPanel rootPanel;

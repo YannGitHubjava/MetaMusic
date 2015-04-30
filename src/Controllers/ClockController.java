@@ -7,6 +7,7 @@ import Models.SpotifyAPIModel;
 
 /**
  * Created by MatthewRowe on 4/16/15.
+ * In charge of keeping track of when to refresh the authentication token for Spotify's api
  */
 public class ClockController extends TimerTask {
 

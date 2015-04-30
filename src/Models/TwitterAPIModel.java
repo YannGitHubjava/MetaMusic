@@ -11,6 +11,7 @@ import java.util.List;
 
 /**
  * Created by MatthewRowe on 4/21/15.
+ * Handle's all TwitterAPI requests
  */
 //http://stackoverflow.com/questions/27882162/i-cant-seem-to-get-the-first-twitter4j-code-example-simple-post-on-twitter-to
 public class TwitterAPIModel {

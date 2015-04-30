@@ -11,6 +11,7 @@ import java.util.Timer;
 
 /**
  * Created by matt.rowe on 4/15/2015.
+ * Controller that handle's the login view's request for authentication into the SpofityAPI, or lack of authentication if user isn't using it
  */
 public class LoginController {
 
@@ -42,7 +43,7 @@ public class LoginController {
         //because the SpotifyAPIModel is static, need to set the keys before building the API
         SpotifyAPIModel.getKeyandSecret();
         SpotifyAPIModel.buildAPI();
-        return SpotifyAPIModel.getAuthenticationURL();
+        return new String (SpotifyAPIModel.getAuthenticationURL());
     }
 
     public static boolean authenticateTokenFromURL (String authenticatedURL) {

@@ -5,6 +5,7 @@ import java.util.LinkedList;
 
 /**
  * Created by MatthewRowe on 4/21/15.
+ * MetaMusicSong is an object that holds all the relevant information for songs gotten from SpotifyModel
  */
 public class MetaMusicSong  implements Serializable{
 
