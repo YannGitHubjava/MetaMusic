@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="11e937d6-19cc-46d8-813d-6f04955bcb8e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dbo.SavedSongs/seg0/c4c0.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dbo.SavedSongs/seg0/d4e0.dat" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbo.SavedSongs/seg0/c20.dat" afterPath="$PROJECT_DIR$/dbo.SavedSongs/seg0/c20.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbo.SavedSongs/seg0/c31.dat" afterPath="$PROJECT_DIR$/dbo.SavedSongs/seg0/c31.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbo.SavedSongs/seg0/c41.dat" afterPath="$PROJECT_DIR$/dbo.SavedSongs/seg0/c41.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbo.SavedSongs/seg0/c4d0.dat" afterPath="$PROJECT_DIR$/dbo.SavedSongs/seg0/c4d0.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbo.SavedSongs/seg0/c51.dat" afterPath="$PROJECT_DIR$/dbo.SavedSongs/seg0/c51.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbo.SavedSongs/seg0/c60.dat" afterPath="$PROJECT_DIR$/dbo.SavedSongs/seg0/c60.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbo.SavedSongs/seg0/c71.dat" afterPath="$PROJECT_DIR$/dbo.SavedSongs/seg0/c71.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbo.SavedSongs/seg0/c81.dat" afterPath="$PROJECT_DIR$/dbo.SavedSongs/seg0/c81.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbo.SavedSongs/seg0/c90.dat" afterPath="$PROJECT_DIR$/dbo.SavedSongs/seg0/c90.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbo.SavedSongs/seg0/ca1.dat" afterPath="$PROJECT_DIR$/dbo.SavedSongs/seg0/ca1.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbo.SavedSongs/seg0/cb1.dat" afterPath="$PROJECT_DIR$/dbo.SavedSongs/seg0/cb1.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbo.SavedSongs/db.lck" afterPath="$PROJECT_DIR$/dbo.SavedSongs/db.lck" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbo.SavedSongs/log/log.ctrl" afterPath="$PROJECT_DIR$/dbo.SavedSongs/log/log.ctrl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbo.SavedSongs/log/log1.dat" afterPath="$PROJECT_DIR$/dbo.SavedSongs/log/log1.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbo.SavedSongs/log/logmirror.ctrl" afterPath="$PROJECT_DIR$/dbo.SavedSongs/log/logmirror.ctrl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/derby.log" afterPath="$PROJECT_DIR$/derby.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="11e937d6-19cc-46d8-813d-6f04955bcb8e" name="Default" comment="" />
     <ignored path="MetaMusic.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -945,12 +925,12 @@
       <workItem from="1429984238822" duration="20000" />
       <workItem from="1429996266059" duration="9761000" />
       <workItem from="1430061652779" duration="12279000" />
-      <workItem from="1430427815976" duration="507000" />
+      <workItem from="1430427815976" duration="571000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84030000" />
+    <option name="totallyTimeSpent" value="84094000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
