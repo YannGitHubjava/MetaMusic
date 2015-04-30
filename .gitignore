@@ -47,3 +47,5 @@ Thumbs.db
 # ETC
 ######################
 *.xml
+
+.idea/workspace.xml
